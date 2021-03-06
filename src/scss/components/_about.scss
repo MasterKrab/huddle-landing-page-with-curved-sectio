@@ -1,0 +1,41 @@
+@use "abstracts/vars/colors" as c;
+
+.about{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   gap: 2rem;
+   margin-bottom: 200px;
+   padding: 1.5rem;
+
+   @media screen and (min-width: 768px){
+      text-align: start;
+      flex-direction: row-reverse;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 100px;
+   }
+
+   &__title{
+      font-family: Poppins, sans-serif;
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      
+      @media screen and (min-width: 768px){
+         font-size: 1.7rem;
+      }
+   }
+
+   &__text{
+      color: lighten(c.$very-dark-cyan, 10%);
+      font-size: 0.9rem;
+      font-family: "Open sans", sans-serif;
+      line-height: 1.5;
+
+      @media screen and (min-width: 768px){
+         font-size: 1.1rem;
+      }
+   }
+}
