@@ -14,6 +14,7 @@
       text-align: start;
       flex-direction: row-reverse;
       justify-content: center;
+      max-width: 1440px;
       margin-left: auto;
       margin-right: auto;
       gap: 100px;
@@ -80,8 +81,18 @@
    &__card, &__image{
       position: relative;
       z-index: 100;
-      max-width: 500px;
    }
+
+   @media screen and (min-width: 768px){
+      &__card{
+         max-width: 500px;
+      }
+
+      &__image{
+         max-width: 350px;
+      }
+   }
+   
 
    &__title{
       font-family: Poppins, sans-serif;
