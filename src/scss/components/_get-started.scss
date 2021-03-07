@@ -28,10 +28,15 @@
       height: 50px;
       border-radius: 2rem;
       box-shadow: 0 5px 15px 1px rgba(#000, 0.3);
+      cursor: pointer;
 
       @media screen and (min-width: 768px){
          width: 280px;
-      height: 60px;
+         height: 60px;
+      }
+
+      &:active{
+         background-color: c.$light-pink;
       }
    }
 }

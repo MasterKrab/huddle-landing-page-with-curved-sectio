@@ -33,7 +33,7 @@ html(lang="en")
       link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.15.2/css/all.css",integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu", crossorigin="anonymous")
    body
       header.main-header 
-         img.main-header__logo(src="../assets/img/logo.svg")
+         img.main-header__logo(src="../assets/img/logo.svg", alt="huddle logo")
          a.main-header__link(href="#") Try it free
       main.main 
          article.introduction
@@ -43,10 +43,10 @@ html(lang="en")
             .introduction__illustration
             .numbers
                section.numbers__card
-                  p.numbers__amount 1.4k+
+                  h2.numbers__amount 1.4k+
                   p.numbers__text Communities Formed
                section.numbers__card.numbers__card--messages
-                  p.numbers__amount 2.7m+
+                  h2.numbers__amount 2.7m+
                   p.numbers__text Messages Sent
          article.about
             figure 
@@ -70,29 +70,36 @@ html(lang="en")
             h2.get-started__title Ready To Build Your Community?
             a.get-started__link Get Started For Free
       footer.footer 
-         form.newsletter
-            h2.newsletter__title Newsletter
-            p.newsletter__text   To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address
-            .newsletter__inputs
-               input.newsletter__input(type="email", name="email", aria-label="Email",required)
-               button.newsletter__submit(type="submit") Subscribe
-         article.footer__contact
-            img.footer__logo(src="../assets/img/logo.svg")
-            p.footer__text 
-               | Lorem ipsum dolor sit amet, consectetur
-               br
-               | adipiscing elit. Mauris nulla quam, hendrerit 
-               br
-               | lacinia  vestibulum a, ultrices quis sem.
-            p.footer__phone Phone: +1-543-123-4567
-            p.footer__email example@huddle.com
-            ul.social-list
-               li.social-list__item
-                  i.fab.fa-facebook.square.social-list__icon
-                  span.social-list__screen-reader-only  Go to huddle's facebook
-               li.social-list__item
-                  i.fab.fa-instagram.social-list__icon
-                  span.social-list__screen-reader-only  Go to huddle's instagram
-               li.social-list__item
-                  i.fab.fa-twitter.square.social-list__icon
-                  span.social-list__screen-reader-only  Go to huddle's twitter
+         .footer__wave
+         .footer__body
+            form.newsletter
+               h2.newsletter__title Newsletter
+               p.newsletter__text   To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address
+               .newsletter__inputs
+                  .newsletter__email
+                     input.newsletter__input(type="email", name="email", aria-label="Email",required)
+                     span.newsletter__span Check your email please
+                  button.newsletter__submit(type="submit") Subscribe
+            .footer__contact
+               img.footer__logo(src="../assets/img/logo.svg", alt="huddle logo")
+               p.footer__text 
+                  | Lorem ipsum dolor sit amet, consectetur
+                  br
+                  | adipiscing elit. Mauris nulla quam, hendrerit 
+                  br
+                  | lacinia  vestibulum a, ultrices quis sem.
+               p.footer__phone Phone: +1-543-123-4567
+               p.footer__email example@huddle.com
+               ul.social-list
+                  li.social-list__item
+                     a.social-list__link
+                        i.fab.fa-facebook.square.social-list__icon
+                        span.social-list__screen-reader-only  Go to huddle's facebook
+                  li.social-list__item
+                     a.social-list__link
+                        i.fab.fa-instagram.social-list__icon
+                        span.social-list__screen-reader-only  Go to huddle's instagram
+                  li.social-list__item
+                     a.social-list__link
+                        i.fab.fa-twitter.square.social-list__icon
+                        span.social-list__screen-reader-only  Go to huddle's twitter
