@@ -17,6 +17,10 @@
       margin-left: auto;
       margin-right: auto;
       gap: 100px;
+
+      &:nth-child(3){
+         flex-direction: row;
+      }
    }
 
    &:nth-child(2),
