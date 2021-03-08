@@ -40,7 +40,7 @@
          background-image: url(../assets/img/bg-section-top-mobile-1.svg);
          top: -20%;
 
-         @media screen and (min-width: 900px){
+         @media screen and (min-width: 768px){
             background-image: url(../assets/img/bg-section-top-desktop-1.svg);
             top: -22%;
             
@@ -56,7 +56,7 @@
          background-image: url(../assets/img/bg-section-bottom-mobile-1.svg);
          bottom: -190px;
 
-         @media screen and (min-width: 900px){
+         @media screen and (min-width: 768px){
             background-image: url(../assets/img/bg-section-bottom-desktop-1.svg);
          }
       }
@@ -81,7 +81,7 @@
          background-image: url(../assets/img/bg-section-bottom-mobile-2.svg);
          bottom: -190px;
 
-         @media screen and (min-width: 900px){
+         @media screen and (min-width: 768px){
             background-image: url(../assets/img/bg-section-bottom-desktop-2.svg);
          }
       }
@@ -92,13 +92,23 @@
       z-index: 100;
    }
 
-   @media screen and (min-width: 900px){
+   @media screen and (min-width: 768px){
       &__card{
          max-width: 500px;
       }
 
       &__image{
          max-width: 350px;
+      }
+   }
+
+   @media screen and (min-width: 1200px){
+      &__card{
+         max-width: 750px;
+      }
+
+      &__image{
+         max-width: 500px;
       }
    }
    
@@ -108,7 +118,7 @@
       font-size: 1.3rem;
       margin-bottom: 1.5rem;
       
-      @media screen and (min-width: 900px){
+      @media screen and (min-width: 768px){
          font-size: 1.7rem;
       }
 
@@ -123,7 +133,7 @@
       font-family: "Open sans", sans-serif;
       line-height: 1.5;
 
-      @media screen and (min-width: 900px){
+      @media screen and (min-width: 768px){
          font-size: 1.1rem;
       }
 
