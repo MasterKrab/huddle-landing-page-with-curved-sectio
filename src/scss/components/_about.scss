@@ -38,15 +38,13 @@
       
       &::before{
          background-image: url(../assets/img/bg-section-top-mobile-1.svg);
-         top: -20%;
+         top: -15%;
 
          @media screen and (min-width: 768px){
             background-image: url(../assets/img/bg-section-top-desktop-1.svg);
-            top: -22%;
-            
          }
 
-         @media screen and (min-width: 1440px){
+         @media screen and (min-width: 1450px){
             top: -35%;
          }
          
@@ -69,11 +67,11 @@
 
          @media screen and (min-width: 768px){
             background-image: url(../assets/img/bg-section-top-desktop-2.svg);
-            top: -22%;
+            top: -15%;
          }
 
-         @media screen and (min-width: 1440px){
-            top: -40%;
+         @media screen and (min-width: 1450px){
+            top: -30%;
          }
       }
 
