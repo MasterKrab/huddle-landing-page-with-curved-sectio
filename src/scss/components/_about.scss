@@ -6,17 +6,14 @@
    align-items: center;
    text-align: center;
    gap: 2rem;
-   margin-bottom: 500px;
+   margin-bottom: 350px;
    padding: 1rem 1.5rem;
    position: relative;
 
-   @media screen and (min-width: 768px){
+   @media screen and (min-width: 900px){
       text-align: start;
       flex-direction: row-reverse;
       justify-content: center;
-      max-width: 1440px;
-      margin-left: auto;
-      margin-right: auto;
       gap: 100px;
 
       &:nth-child(3){
@@ -32,7 +29,7 @@
       &::before{
          content: "";
          background-repeat: no-repeat;
-         background-size: contain;
+         background-size: 100%;
          position: absolute;
          left: 0;
          width: 100%;
@@ -43,16 +40,23 @@
          background-image: url(../assets/img/bg-section-top-mobile-1.svg);
          top: -20%;
 
-         @media screen and (min-width: 768px){
+         @media screen and (min-width: 900px){
             background-image: url(../assets/img/bg-section-top-desktop-1.svg);
+            top: -22%;
+            
          }
+
+         @media screen and (min-width: 1440px){
+            top: -35%;
+         }
+         
       }
 
       &::after{
          background-image: url(../assets/img/bg-section-bottom-mobile-1.svg);
-         bottom: -200px;
+         bottom: -190px;
 
-         @media screen and (min-width: 768px){
+         @media screen and (min-width: 900px){
             background-image: url(../assets/img/bg-section-bottom-desktop-1.svg);
          }
       }
@@ -61,18 +65,23 @@
    &:nth-child(4){
       &::before{
          background-image: url(../assets/img/bg-section-top-mobile-2.svg);
-         top: -15%;
+         top: -20%;
 
          @media screen and (min-width: 768px){
             background-image: url(../assets/img/bg-section-top-desktop-2.svg);
+            top: -22%;
+         }
+
+         @media screen and (min-width: 1440px){
+            top: -40%;
          }
       }
 
       &::after{
          background-image: url(../assets/img/bg-section-bottom-mobile-2.svg);
-         bottom: -200px;
+         bottom: -190px;
 
-         @media screen and (min-width: 768px){
+         @media screen and (min-width: 900px){
             background-image: url(../assets/img/bg-section-bottom-desktop-2.svg);
          }
       }
@@ -83,7 +92,7 @@
       z-index: 100;
    }
 
-   @media screen and (min-width: 768px){
+   @media screen and (min-width: 900px){
       &__card{
          max-width: 500px;
       }
@@ -99,8 +108,12 @@
       font-size: 1.3rem;
       margin-bottom: 1.5rem;
       
-      @media screen and (min-width: 768px){
+      @media screen and (min-width: 900px){
          font-size: 1.7rem;
+      }
+
+      @media screen and (min-width: 1200px){
+         font-size: 2.2rem;
       }
    }
 
@@ -110,8 +123,12 @@
       font-family: "Open sans", sans-serif;
       line-height: 1.5;
 
-      @media screen and (min-width: 768px){
+      @media screen and (min-width: 900px){
          font-size: 1.1rem;
+      }
+
+      @media screen and (min-width: 1200px){
+         font-size: 1.3rem;
       }
    }
 }

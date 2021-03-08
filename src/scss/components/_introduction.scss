@@ -62,7 +62,7 @@
    }
 
    &__illustration{
-      width: 90%;
+      width: 95%;
       min-height: 350px;
       
       background-image: url(../assets/img/screen-mockups.svg);
@@ -98,6 +98,12 @@
       background-repeat: no-repeat;
       background-position: 20px 10px;
       background-size: 35px;
+      
+      @media screen and (min-width: 768px){
+         background-size: 55px;
+         background-position: 20px 0;
+         width: 350px;
+      }
 
       &--messages{
          background-image: url(../assets/img/icon-messages.svg);
@@ -110,9 +116,17 @@
       font-weight: bold;
       margin-top: 35px;
       margin-bottom: 0;
+      
+      @media screen and (min-width: 768px){
+         font-size: 7rem;
+      }
    }
 
    &__text{
       color: lighten(c.$very-dark-cyan, 10%);
+
+      @media screen and (min-width: 768px){
+         font-size: 1.7rem;
+      }
    }
 }     
